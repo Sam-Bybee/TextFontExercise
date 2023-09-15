@@ -1,0 +1,73 @@
+/* BOX MODEL */
+
+h1 {
+    /* CONTENT */
+    background-color: green;
+    
+    /* Sets the width and height of the content to 250px */
+    /* width: 250px;
+    height: 250px; */
+
+/* The length when using a percentage % is determined by the length of the parent element (In this case it is 20% of the width of the body element) */
+/* NOTE: Setting the height to a percentage is only useful when the parent element has a fixed height */
+width: 20%;
+
+/* PADDING */
+/* Creates space between the content and border for an element */
+/* NOTE: Padding is included in a background color as well as a background image */
+
+/* Set the padding to 15px on all sides (Top Right Bottom and Left */
+/* padding: 15px; */
+
+/* Sets the padding above the content to 30px */
+/* padding-top: 30px; */
+
+/* Sets the padding for each side individually */
+/* Top Right Bottom Left */
+/* padding: 5px 30px 50px 90px; */
+
+/* Setting the padding fo Top/Bottom and Left/Right with two values/positions */
+/* padding: 100px 10px; */
+
+/* Removes all padding on an element */
+padding: 0;
+
+/* BORDER */
+border: 12px solid rebeccapurple;
+
+/* MARGIN */
+/* Creates space between other elements and/or the edge of the window/viewport */
+
+/* Removes all margin on an element */
+margin: 0;
+
+/* Margin works the same as padding in regards to setting each/all sides */
+margin: 90px;
+
+/* Setting the left/right values for margin to "auto" will center an element horizontally inside the parent element by evenly distributing the margin on each side (Left and Right) */
+/* margin: 90px auto; */
+
+/* "margin: auto" is the same as "margin: 0 auto" */
+margin: auto;
+
+/* Elements collapse/overlap the vertical space between them. It will use the larger margin value to set that space */
+/* margin: 200px; */
+/* margin: 200px 20px 10px 20px; */
+
+/* THE DISPLAY PROPERTY */
+/* The Display Property can be used to change elements to Block, Inline, or Inline-Block */
+/* The difference between Block and Inline-Block is that Block elements will always start on a new line, but Inline-Block elements can be displayed next to each other on a single line. */
+/* The difference between Inline and Inline-Block is that unlike Inline, Inline-Block allows a width and height to be set on the element. Also, the top and bottom margins/paddings are respected/used. */
+/* display: block; */
+/* display: inline; */
+display: inline-block;
+
+ /* BORDER BOX */
+ /* Setting the "box-sizing: border-box" style includes the padding and border in an elements width and height */
+  /* NOTE: The default value for box-sizing is content-box */
+  /* width: 250px;
+  height: 250px;
+  padding: 50px;
+  border: 50px solid cornflowerblue;
+  box-sizing: border-box; */
+}

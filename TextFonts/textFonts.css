@@ -1,0 +1,88 @@
+/* TEXT & FONTS */
+/* NOTE: Text/Font Styles are styles that can be inherited */
+
+/* FONT FAMILY */
+/* The Font Family property/style sets the font for text */
+/* The fonts that come after the Impact font are there in case the webpage is opened in a browser that does NOT support the Impact font */
+/* NOTE: Single quotes '' or double quotes "" are necessary for fonts with more than one word that are NOT connected with a hyphen - */
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* FONT SIZE */
+/* Using px (Pixels) will set the element's size to a fixed pixel size */
+p {
+    font-size: 25px;
+}
+
+/* em determines the font size based on the font size of the parent element (P element in this case) */
+/* Font size will be 100px (25px x 4) */
+#span-one {
+    font-size: 4em;
+}
+
+/* The 2nd P element is only 64px because is it basing the font size off of the parent element which is the body element. The body element has a default font size of 16px. */
+/* Font size will be 64px (16px x 4) */
+#p-two {
+    font-size: 4em;
+}
+
+/* Even on an h1 (Largest Heading) using em will set the size based off of the font size of the parent element (The body element) */
+/* NOTE: Default value for the font-size property on an h1 is 2em */
+h1 {
+    font-size: 1em;
+}
+
+/* This sets the root font size for all elements in the HTML file (Default root font size is 16px) */
+/* This is used a lot at the start of a CSS file so that em can be used to set the size for different elements in the HTML file */
+/* Notice this does NOT affect the font size in the 1st P element because it has a fixed font size. Therefore it does NOT inherit/base the font size off of the HTML/BODY elements. */
+html {
+    font-size: 10px;
+}
+
+/* rem determines the font size based on the font size of the root element (The html element) */
+/* Font size will be 40px (10px x 4) */
+#span-two {
+    font-size: 4rem;
+}
+
+/* FONT WEIGHT */
+/* Font weight determines the boldness of text */
+p{
+    font-weight: bold;
+    /* Some fonts allow for multiple levels of boldness */
+    font-weight: 400;
+    font-weight: 700;
+}
+
+/* FONT STYLE */
+p {
+    font-style: italic;
+}
+
+/* LINE HEIGHT */
+p {
+    line-height: 1.5;
+}
+
+/* LETTER SPACING */
+p {
+    letter-spacing: 10px;
+}
+
+/* TEXT ALIGN */
+p {
+    text-align: center;
+}
+
+/* TEXT DECORATION */
+span {
+     text-decoration: line-through underline;
+     /* Multiple values can be set */
+}
+
+/* TEXT TRANSFORM */
+/* Determines the casing/capitalization of text */
+p {
+    text-transform: capitalize;
+}
